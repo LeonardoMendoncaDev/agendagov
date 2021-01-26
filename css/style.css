@@ -1,0 +1,1320 @@
+html, body {
+    height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box
+}
+
+
+/* MENU SUPERIOR ********************************************/
+
+.menu-superior {
+    background: #363636;
+    /* padding-bottom: 3px; */
+    height: 45px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+}
+
+.menusupi {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3px;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+}
+
+.esquerda-menu-superior {
+    display: flex;
+    /* width: 14.08em; */
+    width: 11.08em;
+}
+
+.menu-superior li {
+    list-style: none;
+}
+
+.menu-superior a {
+    text-decoration: none;
+    color: #fff;
+    /* margin-left: 30px; */
+    font-size: .8em;
+}
+
+.social-midia-sup {
+    padding-left: 20px;
+}
+
+.social-midia-sup li {
+    list-style: none;
+    display: inline-block;
+    width: 25px;
+}
+
+.icons {
+    width: 17px;
+    height: 17px;
+    text-indent: -9999px;
+    display: block;
+}
+
+.instagram-sup {
+    background: url(../imagens/sm_instagram-ft.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.facebook-sup {
+    background: url(../imagens/sm_facebook-ft.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.twitter-sup {
+    background: url(../imagens/sm_twitter-ft.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.youtube-sup {
+    background: url(../imagens/sm_youtube-ft.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.infosup {
+    letter-spacing: .01em;
+}
+
+.infosup li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1.1em;
+}
+
+
+/* ACESSIBILIDADE DROPDOWN **************************************/
+
+.acessibilidade-dropbtn {
+    /*padding: 16px;
+    background-color: #363636; */
+    color: #ffffff; 
+    border: none;
+    cursor: pointer;
+    font-size: .8em;
+  }    
+  
+  button.acessibilidade-dropbtn {
+    background-color: transparent;
+  }
+  
+  div#acessibilidade-myDropdown a {
+    color: #363636;
+  }
+  
+  /* .acessibilidade-dropbtn:hover, .acessibilidade-dropbtn:focus {
+    background-color: #2980B9;
+  } */
+  
+  button:active.acessibilidade-dropbtn  {
+      outline: none;
+      border: none;
+  }
+  
+  button:focus.acessibilidade-dropbtn  {
+      outline:0;
+  }
+  
+  .acessibilidade-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .acessibilidade-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    border-radius: 2px 2px 5px 5px;
+  }
+  
+  .acessibilidade-dropdown-content a {
+    color: black;
+    padding: 12px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .acessibilidade-dropdown a {color: #363636!important;}
+  
+  .acessibilidade-dropdown a:hover {background-color: #ddd;}
+  
+  .acessibilidade-show {display: block;}
+
+
+
+
+/* CONTRASTE *****************************************************/
+
+
+.contrast::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(../imagens/contrast-black.svg) no-repeat center center;
+    background-size: cover;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Mudança de background e cor de texto ao clicar em Contrast na parte de acessibilidade */
+
+#conteudo.bgContrast, #cabecalho.bgContrast {
+    background-color: #363636;
+    transition: all .3s ease-in-out;
+}
+
+#conteudo.bgContrast *:not(.assinaturasRodape):not(img):not(#back2Top) {
+    color: #ebc41a;
+    transition: all .3s ease-in-out;
+}
+
+#conteudo.bgContrast #mapsvg {
+    background-color: #363636;
+}
+
+#conteudo.bgContrast .w3-button > button {
+    background-color: #363636;
+
+}
+
+#conteudo.bgContrast .w3-modal-content, #conteudo.bgContrast .w3-modal-content button {
+    background-color: #363636;
+}
+
+#cabecalho.bgContrast .menuInferior * {
+    color: #ebc41a;
+}
+
+#cabecalho.bgContrast .subMenuContent {
+    background-color:  #363636;
+}
+  
+
+
+/* CABEÇALHO ******************************************/
+
+
+#cabecalho{
+box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.menuInferior {
+    width: 100%;
+    
+    background-color: #00508a;
+}
+
+.menuInferiorContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+#logoDefesaCivilRJ img {
+    width: 60px;
+    height: auto;
+}
+
+#logoBombeirosRJ img {
+    width: 67px;
+    height: auto;
+}
+
+div#navDesk {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 27px;
+}
+
+#navDesk ul {
+    list-style-type: none;
+    font-family: 'oswald';
+    color: #294d8c;
+    display: flex;
+    padding: unset;
+}
+
+#navDesk ul a {
+    text-decoration: none;
+}
+
+#navDesk ul li {
+    margin-right: 20px;
+}
+
+#navDesk ul li a:hover {
+    color:  #ff6d23;
+    cursor: pointer;
+}
+
+li.itemMenu {
+    height: 40px;
+}
+
+.subMenuContent {
+    display: none!important;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+    z-index: 1;
+    top: 130px;
+    max-width: 230px;
+    font-weight: 500;
+}
+
+.subMenuContent li {
+    padding: 10px;
+    height: auto!important;
+    margin-right: 0!important;
+}
+
+/* .subMenuContent li:hover {
+    background-color: #ddd;
+} */
+
+.subMenuContent a, .subMenuContent__navMob a {
+  text-decoration: none;
+} 
+
+.itemMenu:hover .subMenuContent {display: block!important;}
+
+.logoGovEstadoRJ {
+    width: 300px;
+    height: 80px;
+}
+
+.logoGovEstadoRJ img {
+    width: 300px;
+    height: auto;
+}
+
+
+/* SETA VOLTA AO TOPO **************************/
+
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #ccc;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 15px 15px 0 0;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+
+/***** HERO IMAGE ********************************/
+
+div#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.conteudoContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.secao {
+    padding: 25px 0;
+}
+
+.tituloSecao {
+    margin: 27px 0;
+    font-family: oswald;
+    color: #294d8c;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.subTituloSecao {
+    margin: 10px 0 27px 0;
+    font-family: oswald;
+    color: #ff6d23;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/***** SERVIÇOS ********************************/
+
+.cardsContainer {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.cardServicos {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    border-bottom: solid #294d8c 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    cursor: pointer;
+}
+
+.cardServicos a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.cardServicos:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.3), 0 4px 20px 0 rgba(0,0,0,0.5);
+}
+
+
+
+ .cardServicos img
+ {
+     -o-filter:contrast(80%) brightness(70%);
+     -moz-filter:contrast(80%) brightness(70%);
+     -webkit-filter:contrast(80%) brightness(70%);
+     -ms-filter:contrast(80%) brightness(70%);
+     filter:contrast(80%) brightness(70%);
+ }
+
+.cardServicosTexto {
+    margin-left: 10px;
+    font-family: oswald;
+    font-size: 1.25em;
+    color: #294d8c;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+#servicos .cardServicos {
+    margin: 10px;
+}
+
+
+/***** CATEGORIAS *****************************************/
+
+
+
+.icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #294d8c;
+  }
+svg.icon.icon-raindrops {
+    width: 3.5em;
+    height: 3.5em;
+}
+.categoria-titulo svg.icon.icon-raindrops {
+    width: 3em;
+    height: 3em;
+}
+.categoria svg.icon.icon-bubbles4 {
+    margin: 0;
+}
+  .categoria {
+      padding: 35px 60px 50px 40px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+      margin: 0 20px 50px 20px;
+  }
+  div#adm_pub {
+    margin-top: 100px;
+}
+  .categoria .icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #294d8c;
+  }
+  .categoria-titulo {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 3px solid #294d8c;
+      margin-bottom: 20px;
+      align-items: baseline;
+  }
+  .categoria h1 {
+      font-family: 'oswald';
+      color: #294d8c;
+      margin-left: 15px;
+  }
+  .categoria > ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .categoria > ul > li {
+      list-style-type: none;
+      margin-bottom: 15px;
+      color: #525252;
+      width: 45%;
+      background-color: #eaeaea;
+      border-radius: 3px;
+      border-bottom: solid#6a7b9a8c 3px;
+      box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1), 0 4px 4px 0 rgba(0,0,0,0.1);
+      padding: 11px;
+      cursor: pointer;
+  }
+  .categoria > ul > li > a {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      border-radius: 3px 3px 0 0;
+      font-size: .9em;
+  }
+/*   .categoria > ul > li > a:hover {
+      color: #eeeeee;
+      background-color: #525252;
+  
+  } */
+  .categoria > ul > li > p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: .82em;
+      font-style: italic;
+      padding-left: 10px;
+      line-height: 1.5;
+  }
+
+  .volta-topo-categoria {
+    text-align: end;
+    font-family: 'oswald';
+    color: #294d8c;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: .75em;
+    font-weight: 600;
+}
+
+  .icon-back2Top_categoria {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #555;
+    position: relative;
+    top: 3;
+  }  
+
+ .back2Top_categoria {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    /* z-index: 999; 
+    display: none;*/
+    cursor: pointer;
+    /* position: fixed; */
+    bottom: 50px;
+    right: 0;
+    background-color: #ccc;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    font-family: auto;
+    vertical-align: bottom;
+}
+
+/***** EFEITOS HOVER (hover.css) *****************************************/
+
+
+/* Pop */
+@-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  .hvr-pop {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    /* box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
+  }
+  .hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+/* Bounce To Top */
+.hvr-bounce-to-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #6a7b9a8c;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
+    color: white;
+  }
+  .hvr-bounce-to-top:hover:before, .hvr-bounce-to-top:focus:before, .hvr-bounce-to-top:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+
+/* Wobble Skew */
+  @keyframes hvr-wobble-skew {
+    16.65% {
+      -webkit-transform: skew(-5deg);
+      transform: skew(-5deg);
+    }
+    33.3% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+    49.95% {
+      -webkit-transform: skew(-3deg);
+      transform: skew(-3deg);
+    }
+    66.6% {
+      -webkit-transform: skew(2deg);
+      transform: skew(2deg);
+    }
+    83.25% {
+      -webkit-transform: skew(-1deg);
+      transform: skew(-1deg);
+    }
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  .hvr-wobble-skew {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
+    -webkit-animation-name: hvr-wobble-skew;
+    animation-name: hvr-wobble-skew;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+
+/***** FLIP CARD *****************************************/
+
+
+.card-container {
+    position: relative;
+    float: left;
+    /* width: 45%; 
+    width: 28.7%;*/
+    width: 22%;
+    /* height: 200px; */
+    margin: 10px 0 10px 4%;
+    background: #fff;
+    /* border-radius: 20px; */
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* cursor: pointer; */
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    -o-transition: -o-transform 0.4s;
+    transition: transform 0.4s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.card .front {
+    cursor: alias;
+    /* background: #00508a; */
+}
+
+.card .front, .card .back {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* line-height: 35px; */
+    color: white;
+    text-align: center;
+    /* font-size: 2em; */
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* border-radius: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25); */
+}
+
+/* .icon-wrap {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #07375a;
+    border-radius: 50%;
+    margin: 0 auto;
+} */
+
+.card .back {
+    background: #6988b5;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card .back {
+    /* width: 94%; */
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.cardContent {
+    padding: 4%;
+    font-weight: 100;
+    text-align: left;
+}
+
+.wrapper.cards a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper.cards h2, .wrapper.cards h3 {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.cardTitle {
+    font-size: 1.4em;
+    line-height: 1.2em;
+    margin: 0;
+    font-family: 'oswald';
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.cardContent p {
+    margin-bottom: 15px;
+}
+
+h5.cardAcesse {
+    font-size: .9em;
+    line-height: 1.2em;
+    margin: 0;
+    background-color: #eee;
+    color: #363636;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px;
+    width: 72px;
+    /* margin: 0 auto; */
+    float: right;
+}
+
+.animation {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+.card.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+  }
+
+
+/****** FOOTER **************************************************/
+
+
+
+.footer {
+    width: 100%;
+    position: relative;
+    background: #00508a;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.logoGovEstadoRJ_footer {
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;}
+
+.logoGovEstadoRJ_footer img {
+    width: inherit;
+    height: inherit;}
+
+
+
+
+
+/*****************************************************/
+/***** MEDIA-QUERIES ********************************/
+/***************************************************/
+/**************************************************/
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    /***** HOME: PREVISÃO DO TEMPO *******************/
+    
+    .dadosPrevisao {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .dadosPrevisao > div {
+        border: solid 2px #ddd;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 115px;
+        margin-bottom: 15px;
+        padding: 5px;
+        width: 100px;
+    }
+    
+    .dadosPrevisao img {
+        width: auto;
+        /* margin-bottom: 20px; */
+    }
+    
+    div#tempo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    div#tempo img {
+        margin-bottom: 0px;
+    }
+    
+    div#temperaturas {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #temperaturas > div {
+        display: flex;
+        height: 40px;
+        align-items: center;
+    }
+    
+    .wrap-internoTemperaturas {
+        padding: 0; 
+    }
+    
+    .wrap-internoTemperaturas > div img {
+        margin-bottom: 0;
+    }
+    
+    .wrap-internoTemperaturas div:nth-child(2) {
+        width: 20px;
+        text-align: center;
+    }
+    
+    div#sol {
+        display: flex;
+        justify-content: center;
+    }
+    
+    div#ventos {
+        width: min-content;
+        display: flex;
+        justify-content: center;
+        font-size: .9em;
+        min-width: 100px;
+    }
+    
+    .wrap-internoHumidade {
+        padding: 8px;
+    }
+    
+    div#humidade {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    div#humidade img {
+        width: auto;
+    }
+
+
+
+    .cardPrevisaoTempoTextoInterno {
+        padding: 15px;
+    }
+    
+    .cardPrevisaoTempoTextoInterno p {
+        padding: 0 10px 0 20px;
+    }
+    
+    .nomeRegiao {
+        padding-left: 20px;
+    }
+
+    
+    }
+
+@media screen and (min-device-width: 601px) {
+    #navMob {display: none;visibility: hidden;}
+    .logo-secretaria-vertical {display: none;visibility: hidden;}
+} 
+
+
+@media screen and (max-device-width: 600px) {
+    /* CABEÇALHO E RODAPÉ */
+    #navDesk {display: none; visibility: hidden;}
+    .menuInferior {flex-wrap: wrap; justify-content: center;}
+    #logoBombeirosRJ {margin: 25px;}
+    #logoDefesaCivilRJ {margin: 25px;}
+    div#rodape {height: fit-content; padding: 30px;}
+    .assinaturasRodape {flex-direction: column;}
+    .assinaturasRodape img {margin-bottom: 30px;}
+    .logo-secretaria {display: none;visibility: hidden;}
+    /* GERAL */
+    .conteudoContainer {width: 95%;}
+    .tituloSecao {margin: 27px 0; font-family: oswald; color: #294d8c; font-size: 1.3em; font-weight: 600; text-transform: uppercase;}
+    .wrap-tituloSecao h3 {
+        font-family: oswald;
+        color: #ff6d23;
+        font-size: 0.9em;}
+    /* HOME */
+    .cardServicos {width: 100%; margin-bottom: 40px;}
+    .cardsContainer {flex-wrap: wrap;}
+    .cardLinksUteis {justify-content: center;}
+    /* PÁGINA PREVISÃO */
+    .cardPrevisaoTempoInterno {width: 100%;}
+    .cardPrevisaoTempo {flex-direction: column;}
+    .cardPrevisaoTempo img {width: 100%;}
+    .cardPrevisaoTempoTexto {width: 100%;}
+	.cardPrevisaoTempoTexto p {
+        font-size: 1em;
+        font-weight: 300;}
+    .dadosPrevisao {
+        flex-wrap: wrap; margin: 20px 0 20px 0;}
+    .dadosPrevisao > div {
+        width: 35%;}
+    .nomeRegiao {font-size: 0.7em; height: fit-content;}
+    p.dataPrevisao {font-size: 0.9em; height: fit-content;}
+    /* PÁGINA AVISOS */    
+    .informativo {flex-direction: column;}
+    .alerta {flex-direction: column;}
+    .alertaTexto {width: 100%;}
+}
+
+
+
+
+   /******** Responsividade da parte de DESASTRES pra modo tablet *********/ 
+  
+   @media only screen and (min-width: 767px) and (max-width: 1024px) {
+
+    .cardDesastres:nth-of-type(3) {
+        margin-right: 0;}
+    .assinaturasRodape {
+        justify-content: flex-start;    }
+    .assinaturasRodape img:nth-of-type(1) {
+        width: 170px;
+        margin-right: 10px;} 
+    .assinaturasRodape img:nth-of-type(3) {
+        width: 360px;
+        margin-left: 10px;}
+    .menuInferior #logoDefesaCivilRJ img, .menuInferior #logoBombeirosRJ img {
+        width: 60px;}
+    div#navDesk ul li {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+    .menuInferior {
+        justify-content: space-around;}
+    div#navDesk ul li {
+        font-size: 13px;}
+    div#navDesk ul li:nth-of-type(1) {
+        margin-right: 15px;
+        margin-left: 5px;}
+    div#logoBombeirosRJ {
+        margin-left: 10px;}
+/*     .logoGovEstadoRJ img {
+        width: 285px;
+        height: auto;} */
+    div#rodape {
+        height: 300px;}
+    .cardsContainer a {
+        text-decoration: none;} 
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+ /***** HOME: cards no tablet ******/   
+	#servicos .cardsContainer { 
+		justify-content: center;}
+	#servicos .cardServicos:first-child, #servicos .cardServicos:nth-of-type(3) {
+		margin-right: 5%;}
+	#servicos .cardServicos:first-child, #servicos .cardServicos:nth-of-type(2) {
+		margin-top: 5%;}
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+/****** HOME: Cards no celular*****/
+
+	#servicos .cardsContainer {
+		justify-content: center;}
+	#servicos .cardServicos {
+		margin: 10px;}
+
+  /*********** Parte dos cartões de desastres no celular ***********/
+
+    .cardDesastres {
+        width: 45%;}
+    .conteudoContainer {
+        width: 95%;}
+
+/*     .cardDesastres:nth-of-type(4) {
+        margin-top: 0;
+    }
+    .cardDesastres:nth-of-type(5) {
+        margin-top: 0;
+    } */
+
+    div#rodape {
+        height: 100%;}
+    
+/*     .cardsContainer a:nth-of-type(2), .cardsContainer a:nth-of-type(3) {
+        margin-top: 20px;
+    } */
+
+    #desastres .cardsContainer{
+        justify-content: center;}
+    .cardsContainer a {
+        margin-right: 0;}
+    
+/************ HOME: SERVIÇOS ********************/
+
+    .cardsContainer {
+        flex-wrap: wrap;}
+    .cardServicos {
+        width: 45%;
+        margin-bottom: 20px;
+        margin: 0 15px 20px 0;}
+
+
+/************ cabeçalho ********************/
+
+.nav__toggle {
+    top: 165px;}
+.menu-superior {
+    height: auto;}
+.menusupi {
+    width: 100%;
+    flex-direction: column;
+    padding: 15px;}
+.infosup {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;}
+.esquerda-menu-superior {
+    padding: 8px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;}
+
+/* .menuInferior {
+    padding-top: 50px;
+} */
+
+.splash {
+    top: 165px}
+.nav:target .nav__item, .nav--open .nav__item {
+    max-width: 95%;}
+ul.nav__menu {
+    padding-left: 20px;}
+a.nav__link {
+    font-size: 1.3rem;}
+ul.subMenuContent__navMob li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;}
+
+
+/**** HOME: AVISOS E INFORMATIVOS METEREOLÓGICOS *****/
+
+.informativoHome {
+    flex-direction: column;
+    margin: 0;}
+.informativoImagemHome {
+    width: 100%;}
+.informativoImagemHome img {
+    width: 70%;
+    height: auto;}
+.informativoTexto {
+    width: 100%;
+    padding-top: 0;}
+p.subTituloSecao {
+    font-size: 1.1em;}
+
+/******************** PÁGINA AVISOS METEREOLÓGICOS *********************/
+
+div#alertaSms figure {
+    margin: 1em 0;}
+div#alertaSms figure img {
+    width: 100%;
+    height: auto;}
+div#alertaSms p {
+    margin-left: 10px;}
+div#alertaSms h2 {
+    padding: 0;}
+.caixaObservacao {
+    margin: 20px 0;
+    width: 95%;}
+.informativo {
+    flex-direction: column;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2), 0 0 20px 0 rgba(0,0,0,0.19);
+    width: 95%;
+    margin: 40px auto;}
+.informativoImagem {
+    box-shadow: unset;}
+
+/************* PÁGINA ALERTA HIDROLÓGICO *******************/
+
+.alertaImagem {
+    box-shadow: unset;}
+.alertaImagem img {
+    width: 60%;}
+.alerta {
+    flex-direction: column;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2), 0 0 20px 0 rgba(0,0,0,0.19);
+    width: 95%;
+    margin: 40px auto;}
+
+}   
+
+
+@media only screen and (min-width:300px) and (max-width: 767px) {
+
+    /* Alterando a parte de aviso na versão mobile. Colocando a imagem no centro. */
+    .informativoImagem {
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;}
+  
+    /* Aumentando em 100% a div alertaImagem */
+    .alertaImagem {
+      width: 100%;}
+  
+    /* Resolvendo problema de desaparecimento do botão de localização no card. */ 
+    .cardPrevisaoTempoTexto {
+        padding: 15px 10px;}
+    .w3-modal-content {
+      padding: 0;}
+    #hero > div {
+        height: 160px;}
+    .wrap-tituloSecao {
+        justify-content: center;}
+    .categoria > ul > li {
+        width: 100%;}
+    
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .logoGovEstadoRJ {
+        width: 235px;
+        height: 63px;}
+
+    .logoGovEstadoRJ img {
+        width: inherit;
+        height: inherit;}
+
+}
+
+
+
+
+  
+  @media only screen and (max-width: 460px) {
+
+    .cardServicos {
+        width: 90%;
+        margin-bottom: 30px;
+        height: 60px;}
+
+    .categoria {
+        padding: 5px;
+        box-shadow: none;}
+
+
+}
+  
+
+
+
+
+  @media only screen and (max-width: 300px) {
+  
+      /* Alteração do font-size do h2 da div alterarRegiao */ 
+      .alterarRegiao h2 {
+          font-size: 22px;}
+  
+      /* Alterando o padding do modal pra 0 na versão menor do mobile */
+      .w3-modal-content {
+          padding: 0;}
+  
+      /* Alteração apenas do padding da direita e esquerda na div cardPrevisaoTempoTexto */
+      .cardPrevisaoTempoTexto {
+          padding: 15px 10px;}
+  
+      /* Definindo o elemento a dentro da div nomeRegiao para flex e colocando ele no centro  para que não quebre */ 
+      .nomeRegiao a {
+          display: flex;
+          justify-content: center;}   
+      
+  }
+ 

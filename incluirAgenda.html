@@ -1,0 +1,542 @@
+<DOCTYPE HTML>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Language" content="pt-br; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>AGENDA GOV</title>
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="./imagens/80972b7f376d55.ico" type="image/x-icon">
+        <link rel="icon" href="./imagens/80972b7f376d55.ico" type="image/x-icon">
+        <!-- javaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <link href="css/editor.css" type="text/css" rel="stylesheet" />
+        <script src="js/editor.js"></script>
+        <!-- CSS -->
+        <!-- <link rel="stylesheet" href="css/flip-card-servicos.css"> -->
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/util.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- FONTES -->
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="//db.onlinewebfonts.com/c/0265b98b68ecf1b3d801b5df4dc155e7?family=icomoon" rel="stylesheet"
+            type="text/css" />
+
+        <style>
+            @font-face {
+                font-family: oswald;
+                src: url(./fonts/oswald-bold-webfont.eot);
+                src: url(./fonts/oswald-bold-webfont.eot?#iefix) format('embedded-opentype'), url(./fonts/oswald-bold-webfont.woff2) format('woff2'), url(./fonts/oswald-bold-webfont.woff) format('woff'), url(./fonts/oswald-bold-webfont.ttf) format('truetype'), url(./fonts/oswald-bold-webfont.svg#oswaldbold) format('svg');
+                font-weight: 700;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: oswald;
+                src: url(./fonts/oswald-light-webfont.eot);
+                src: url(./fonts/oswald-light-webfont.eot?#iefix) format('embedded-opentype'), url(./fonts/oswald-light-webfont.woff2) format('woff2'), url(./fonts/oswald-light-webfont.woff) format('woff'), url(./fonts/oswald-light-webfont.ttf) format('truetype'), url(./fonts/oswald-light-webfont.svg#oswaldlight) format('svg');
+                font-weight: 200;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: oswald;
+                src: url(./fonts/oswald-regular-webfont.eot);
+                src: url(./fonts/oswald-regular-webfont.eot?#iefix) format('embedded-opentype'), url(./fonts/oswald-regular-webfont.woff2) format('woff2'), url(./fonts/oswald-regular-webfont.woff) format('woff'), url(./fonts/oswald-regular-webfont.ttf) format('truetype'), url(./fonts/oswald-regular-webfont.svg#oswaldregular) format('svg');
+                font-weight: 400;
+                font-style: normal
+            }
+
+            @font-face {
+                font-family: icomoon;
+                src: url(./fonts/icomoon.eot?wi8q16);
+                src: url(./fonts/icomoon.eot?#iefixwi8q16) format('embedded-opentype'), url(./fonts/icomoon.woff?wi8q16) format('woff'), url(./fonts/icomoon.ttf?wi8q16) format('truetype'), url(./fonts/icomoon.svg?wi8q16#icomoon) format('svg');
+                font-weight: 400;
+                font-style: normal
+            }
+
+            .icon-study,
+            .icon-home,
+            .icon-aid-kit,
+            .icon-factory,
+            .icon-store {
+                margin-right: 20px;
+            }
+
+            .icon-bubbles4 {
+                margin-left: 20px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <script>
+            AOS.init();
+        </script>
+
+        <header>
+
+            <div id="cabecalho">
+                <div class="menu-superior">
+                    <div class="menusupi">
+                        <div class="esquerda-menu-superior">
+                            <ul>
+                                <li style="font-weight:600; letter-spacing:0.8">
+                                    <a href="http://rj.gov.br/" target="_blank">rj.gov</a>
+                                </li>
+                            </ul>
+                            <div class="social-midia-sup" style="padding-left: 20px;">
+                                <ul>
+                                    <li><a class="icons instagram-sup" href="https://instagram.com/govrj"
+                                            target="_blank">Instagram</a></li>
+                                    <li><a class="icons facebook-sup" href="https://facebook.com/governodorio"
+                                            target="_blank">Facebook</a></li>
+                                    <li><a class="icons twitter-sup" href="https://twitter.com/GovRJ"
+                                            target="_blank">Twitter</a></li>
+                                    <li><a class="icons youtube-sup" href="https://youtube.com/user/GovRJ"
+                                            target="_blank">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="infosup">
+                            <ul>
+                                <li><a href="http://www.rj.gov.br/coronavirus/default.html"
+                                        target="_blank">Coronavírus</a></li>
+
+                                <li><a href="http://www.governoaberto.rj.gov.br/" target="_blank">Portal da
+                                        Transparência</a></li>
+                                <li><a href="http://www.esicrj.rj.gov.br" target="_blank">Acesso à Informação</a></li>
+                                <li><a href="https://falabr.cgu.gov.br/publico/RJ/Manifestacao/RegistrarManifestacao"
+                                        target="_blank">Fala.BR</a></li>
+                                <li class="acessibilidade-dropdown">
+                                    <button onclick="myFunction()"
+                                        class="acessibilidade-dropbtn">Acessibilidade</button>
+                                    <div id="acessibilidade-myDropdown" class="acessibilidade-dropdown-content">
+                                        <a href="#" class="contrast" id="contraste">Contraste</a>
+                                        <a href="#" class="acessibilidadeFonte" id="tamanhofonte"><span
+                                                style="font-weight:700;">A</span><span
+                                                style="font-weight:700; font-size:0.8em;">A</span>&nbsp; Tamanho da
+                                            fonte</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menuInferior">
+                    <div class="menuInferiorContainer">
+                        <div class="logoGovEstadoRJ"><img src="imagens/logo-governo-g13.png"
+                                alt="Governo do Estado do Rio de Janeiro"></div>
+                    </div><!-- /menuInferiorContainer -->
+                </div><!-- /menuInferior -->
+            </div><!-- /#cabecalho -->
+        </header>
+
+        <script>
+            function myFunction() {
+                document.getElementById("acessibilidade-myDropdown").classList.toggle("acessibilidade-show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.acessibilidade-dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("acessibilidade-dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('acessibilidade-show')) {
+                            openDropdown.classList.remove('acessibilidade-show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <div id="conteudo">
+
+            <div class="conteudoContainer">
+
+                <section id="barra" class="secao">
+                    <div style="float: right;font-family: 'Poppins-Regular';font-size: 12px;">
+                        <a href="listarAgenda.html">Listar Agenda</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html">Logout</a>                        
+                    </div>
+                </section>
+
+                <section id="" style=" background-color:#FFFFFF;">
+
+                    <div class="section-container noticia-titulo-pagina"
+                        style="display: flex; align-items: center; justify-content: center; flex-direction:column;">
+                        <div
+                            style="width:100%; margin: 20px 0; font-size: 1.5em; color: #00508a; border-bottom: solid 7px; font-weight: 800;">
+                            <h1 style="font-family: 'Poppins-Regular';font-weight: bold;"><i class="fa fa-calendar" aria-hidden="true"></i> AGENDA GOV</h1>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <section id="conteudo" class="secao">
+                    <div class="limiter">
+                        <div class="container-login100" style="min-height: 0px;">
+                            <div class="wrap-login100">
+                                <form style="width: 100%;padding: 20px;">
+                                    <div class="form-group">
+                                        <label for="exampleInputSolicitante">Solicitante</label>
+                                        <input type="text" class="form-control" id="solicitante" aria-describedby="solicitanteHelp" placeholder="Nome do Solicitante">
+                                        <small id="solicitanteHelp" class="form-text text-muted"></small>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="exampleInputSecretaria">Secretaria/Órgão</label>
+                                            <input type="text" class="form-control" placeholder="Nome da Secretaria ou Órgão Solicitante" id="secretaria" aria-describedby="secretariaHelp" >
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputCargo">Cargo</label>
+                                            <input type="text" class="form-control" placeholder="Cargo do Solicitante" id="cargo" aria-describedby="cargoHelp">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail">Email</label>
+                                        <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Cadastre um email para contato">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="exampleInputCategoria">Categoria</label>
+                                            <select class="form-control">
+                                                <option>Selecione</option>
+                                                <option>Obra</option>
+                                                <option>Reunião</option>
+                                                <option>Evento</option>
+                                                <option>Inauguração</option>
+                                                <option>Visita</option>
+                                                <option>Governo</option>
+                                            </select>
+                                            <small id="categoriaHelp" class="form-text text-muted"></small>
+                                        </div>
+                                        <div class="col">
+                                            <label for="exampleInputTelefone">Telefone de Contato</label>
+                                            <input type="text" class="form-control" placeholder="Cadastre um telefone de contato" id="telefone" aria-describedby="telefoneHelp">
+                                            <small id="telefoneHelp" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputDescricao">Descrição da Agenda</label>
+                                        <textarea class="form-control" id="descricao" rows="3" aria-describedby="descricaoHelp" placeholder="Faça uma breve descrição sobre o assunto da agenda proposta"></textarea>                                        
+                                        <small id="descricaoHelp" class="form-text text-muted"></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputDataHorario">Data e Horário do Evento</label>
+                                        <input class="form-control" type="datetime-local" value="2021-01-26T13:00:00" id="dataHorario">
+                                        <small id="dataHorarioHelp" class="form-text text-muted"></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputLocal">Local</label>
+                                        <input type="text" class="form-control" id="local" aria-describedby="localHelp" placeholder="Ex. Presidente Vargas">
+                                        <small id="localHelp" class="form-text text-muted"></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputParticipantes">Participantes e Autoridades</label>
+                                        <input type="text" class="form-control" id="participantes" aria-describedby="participantesHelp" placeholder="Escreva as autoridades que estarão presentes">
+                                        <small id="participantesHelp" class="form-text text-muted"></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPrevisaoPublico">Previsão de Público (Número previstos)</label>
+                                        <input type="text" class="form-control" id="previsao" aria-describedby="previsaoHelp" placeholder="Número de público previsto">
+                                        <small id="previsaoHelp" class="form-text text-muted"></small>
+                                    </div>
+                                    <div class="form-group" style="text-align: center;">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sucessoModal">
+                                            Solicitar
+                                        </button>                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dropDownSelect1"></div>
+                </section><!-- /login -->
+            </div><!-- /conteudoContainer -->
+
+        </div><!-- /conteudo -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="sucessoModal" tabindex="-1" role="dialog" aria-labelledby="sucessoModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sucessoModalLabel">Agenda Gov informa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Solicitação salva com sucesso!
+                </div>
+                <div class="modal-footer">               
+                    <button type="button" class="btn btn-primary solicitar" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div style="display: contents; flex-direction: column; width: 40%; text-align: center;">
+                <h1>Palácio Guanabara</h1>
+                <span>R. Pinheiro Machado, s/nº - Laranjeiras, Rio de Janeiro - RJ | CEP 22231-901</span>
+                <div>
+                    <div class="logoGovEstadoRJ_footer">
+                        <img src="imagens/logo-governo-g13.png" alt="Governo do Estado do Rio de Janeiro">
+                    </div>
+                </div>
+                <div>
+                    <a href="http://www.proderj.rj.gov.br/" target="_blank">
+                        <img src="imagens/tecnologia_proderj_negativo.png" alt="tecnologia PRODERJ" height="" width="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- VOLTAR AO TOPO -->
+
+        <a id="back2Top" title="Voltar ao topo" href="#">&#10148;</a>
+
+        <script type="text/javascript">
+            /*Scroll to top when arrow up clicked BEGIN*/
+            $(window).scroll(function () {
+                var height = $(window).scrollTop();
+                if (height > 100) {
+                    $('#back2Top').fadeIn();
+                } else {
+                    $('#back2Top').fadeOut();
+                }
+            });
+            $(document).ready(function () {
+                $("#back2Top").click(function (event) {
+                    event.preventDefault();
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                    return false;
+                });
+
+            });
+        </script>
+
+        <!-- VOLTAR AO TOPO CATEGORIA -->
+
+        <script type="text/javascript">
+            /*Scroll to top when arrow up clicked BEGIN*/
+            $(window).scroll(function () {
+                var height = $(window).scrollTop();
+                if (height > 100) {
+                    $('.back2Top_categoria').fadeIn();
+                } else {
+                    $('.back2Top_categoria').fadeOut();
+                }
+            });
+            $(document).ready(function () {
+                $(".back2Top_categoria").click(function (event) {
+                    event.preventDefault();
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                    return false;
+                });
+
+            });
+        </script>
+
+        <!-- FLIP-CARD -->
+
+        <script>
+            $('.card').click(function () {
+                $(this).toggleClass('flipped');
+            });
+        </script>
+
+
+        <!--  ACESSIBILIDADE  -->
+
+        <script>
+
+            const cabeçalho = document.querySelector('header');
+
+            const acessebilidadeContraste = document.querySelector('.acessibilidade-dropbtn');
+
+            const ToggleClick = (event) => {
+                event.preventDefault();
+                cabeçalho.style.backgroundColor = '#363636 !important';
+            }
+
+            acessebilidadeContraste.addEventListener('click', ToggleClick);
+
+        </script>
+
+
+
+        <script type="text/javascript">
+
+            $('#sucessoModal').modal('hide');
+
+            $(document).ready(function () {
+
+                $(".solicitar").click(function(){                    
+                    window.location.replace("listarAgenda.html");
+                });
+
+
+                var size = 1.0;
+                var sizePainel = 2;
+                var noticiasH1 = 1.5;
+                var noticiasH4 = 0.8;
+                var vamosvirarojogoh1 = 16.0;
+                var vamosvirarojogospan = 1.0;
+                var telefonesuteis = 0.9;
+                var footerh1 = 1.5;
+                var footerspan = 0.8;
+                var sectioncontainer = 1.0;
+
+                $("#tamanhofonte").click(function () {
+                    var increase = 0.1;
+
+                    if (size < 1.5) {
+                        size += increase;
+                        sizePainel += increase;
+                        noticiasH1 += increase;
+                        noticiasH4 += increase;
+                        vamosvirarojogoh1 += increase;
+                        telefonesuteis += increase;
+                        footerh1 += increase;
+                        footerspan += increase;
+                        vamosvirarojogospan += increase;
+                        sectioncontainer += increase;
+                    }
+                    else {
+                        size = 1.0;
+                        sizePainel = 2;
+                        titlesliderh1 = 1.5;
+                        noticiasH1 = 1.5;
+                        noticiasH4 = 0.8;
+                        telefonesuteis = 0.9;
+                        footerh1 = 1.5;
+                        footerspan = 0.8;
+                        vamosvirarojogoh1 = 16.0;
+                        vamosvirarojogospan = 1.0;
+                        sectioncontainer = 1.0;
+                    }
+
+
+                    $(".section-container").css('font-size', sectioncontainer + 'em');
+                    $(".secao").css('font-size', size + 'em');
+                    $(".desc-title-slider span").css('font-size', sizePainel + 'em');
+                    $(".title-slider h1").css('font-size', size + 'em');
+                    $(".secao h1").css('font-size', noticiasH1 + 'em');
+                    $(".secao h4").css('font-size', noticiasH4 + 'em');
+                    $(".secao .desc-slider2-conteudo h1").css('font-size', vamosvirarojogoh1 + 'em');
+                    $(".secao .desc-slider2-texto span").css('font-size', vamosvirarojogospan + 'em');
+                    $(".secao .telefones-uteis-wrap").css('font-size', telefonesuteis + 'em');
+                    $(".footer h1").css('font-size', footerh1 + 'em');
+                    $(".footer span").css('font-size', footerspan + 'em');
+
+
+
+                });
+
+
+
+                const seeCabecalho = document.querySelector('#cabecalho');
+                const logoEstadoRJ = document.querySelector('#logoGovEstadoRJ img')
+                $("#contraste").click(function (e) {
+                    e.preventDefault();
+                    $("#conteudo, #cabecalho").stop().toggleClass("bgContrast");
+                    if (seeCabecalho.classList.contains('bgContrast')) {
+                        logoEstadoRJ.src = "imagens/logo-gov-estado-br.webp";
+                    } else {
+                        logoEstadoRJ.src = "imagens/logo-gov-estado.webp";
+                    }
+                });
+
+
+                function fonte(e) {
+                    var elemento = $(".acessibilidadeFonte");
+                    var fonte = elemento.css('font-size');
+                    if (e == 'a') {
+                        elemento.css("fontSize", parseInt(fonte) + 1);
+                    } else if ('d') {
+                        elemento.css("fontSize", parseInt(fonte) - 1);
+                    }
+                }
+            });
+
+
+
+        </script>
+
+
+
+
+
+        <!-- MENU HAMBURGUER / NAVEGAÇÃO MOBILE -->
+        <script>
+            const nav = document.querySelector('#navMob');
+            const menu = document.querySelector('#menu');
+            const menuToggle = document.querySelector('.nav__toggle');
+            let isMenuOpen = false;
+
+
+            // TOGGLE MENU ACTIVE STATE
+            menuToggle.addEventListener('click', e => {
+                e.preventDefault();
+                isMenuOpen = !isMenuOpen;
+
+                // toggle a11y attributes and active class
+                menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
+                menu.hidden = !isMenuOpen;
+                nav.classList.toggle('nav--open');
+            });
+
+
+            // TRAP TAB INSIDE NAV WHEN OPEN
+            nav.addEventListener('keydown', e => {
+                // abort if menu isn't open or modifier keys are pressed
+                if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
+                    return;
+                }
+
+                // listen for tab press and move focus
+                // if we're on either end of the navigation
+                const menuLinks = menu.querySelectorAll('.nav__link');
+                if (e.keyCode === 9) {
+                    if (e.shiftKey) {
+                        if (document.activeElement === menuLinks[0]) {
+                            menuToggle.focus();
+                            e.preventDefault();
+                        }
+                    } else if (document.activeElement === menuToggle) {
+                        menuLinks[0].focus();
+                        e.preventDefault();
+                    }
+                }
+            });
+
+
+        </script>
+
+
+
+
+    </body>
+
+    </html>
